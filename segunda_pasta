@@ -1,0 +1,10 @@
+# (20) Crie uma função chamada alerta_uso que recebe como parâmetro uma lista com os valores de uso de CPU de uma região. A função deve retornar True se algum valor ultrapassar 85% de uso, e False caso contrário. Teste a função para todas as regiões da matriz.
+def alerta_uso():
+  for linha in uso_cpu:
+    for valor in linha:
+      if valor > 85:
+        print("True")
+    else:
+      print("False")
+
+alerta_uso()
